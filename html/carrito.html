@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito Gamer - GamerZone</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><span class="logo-icon">🎮</span><h1>GamerZone</h1></div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="productos.html">Catálogo</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Noticias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-right">
+            <a href="carrito.html" class="cart-btn active">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Mi Carrito Gamer</h1>
+        <div class="cart-layout">
+            <div class="cart-items" id="cart-items-list">
+                <!-- Se dinamiza vía LocalStorage -->
+            </div>
+            <div class="cart-summary">
+                <h2>TOTAL: <span id="cart-total-price">$0</span></h2>
+                <div class="coupon-box">
+                    <input type="text" id="coupon-input" placeholder="Cupón Gamer (Ej: DUOCGAMER)">
+                    <button type="button" onclick="aplicarCuponGamer()" class="btn btn-secondary">APLICAR</button>
+                </div>
+                <button type="button" onclick="procesarCompraGamer()" class="btn btn-success btn-block btn-lg">COMPRAR AHORA</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

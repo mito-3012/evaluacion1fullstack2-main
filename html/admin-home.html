@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Admin - GamerZone</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">⚡ ADMIN PANEL</div>
+        <nav class="sidebar-nav">
+            <a href="admin-home.html" class="active">📊 DASHBOARD</a>
+            <a href="admin-productos.html">🎮 INVENTARIO</a>
+            <a href="admin-usuarios.html">👥 USUARIOS</a>
+            <a href="index.html">🛍️ IR A TIENDA</a>
+            <a href="#" onclick="cerrarSesionGamer()" style="color:var(--primary-pink); margin-top:20px;">🚪 CERRAR SESIÓN</a>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <h1 style="font-family:'Orbitron', sans-serif; color:var(--primary-cyan);">PANEL ADMINISTRATIVO GAMERZONE</h1>
+        <p style="margin-top:10px; color:var(--text-muted); font-size:1.1rem;">Resumen en tiempo real del estado de la tienda.</p>
+
+        <!-- TARJETAS DE ESTADÍSTICAS SINCRO CON APP.JS -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 30px;">
+            <div class="form-card" style="margin:0; text-align:center;">
+                <h3 style="color:var(--text-muted); font-size:0.9rem;">TOTAL PRODUCTOS</h3>
+                <p id="dash-total-products" style="font-family:'Orbitron', sans-serif; font-size:2.5rem; color:var(--primary-cyan); margin-top:10px;">0</p>
+            </div>
+            <div class="form-card" style="margin:0; text-align:center;">
+                <h3 style="color:var(--text-muted); font-size:0.9rem;">STOCK BAJO (&lt; 10 u.)</h3>
+                <p id="dash-low-stock" style="font-family:'Orbitron', sans-serif; font-size:2.5rem; color:var(--primary-pink); margin-top:10px;">0</p>
+            </div>
+            <div class="form-card" style="margin:0; text-align:center;">
+                <h3 style="color:var(--text-muted); font-size:0.9rem;">ITEMS EN CARRITOS</h3>
+                <p id="dash-cart-items" style="font-family:'Orbitron', sans-serif; font-size:2.5rem; color:#fff; margin-top:10px;">0</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Juego - GamerZone</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><span class="logo-icon">🎮</span><h1>GamerZone</h1></div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="productos.html" class="active">Catálogo</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Noticias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-right">
+            <a href="carrito.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">Home &gt; Videojuegos &gt; <span id="p-title-bread">Cargando...</span></div>
+        <div class="product-detail-layout">
+            <div class="product-media">
+                <img id="p-main-img" src="" alt="Imagen Juego" class="main-detail-img">
+                <div class="thumbnails">
+                    <img id="thumb-1" src="" alt="Thumb 1">
+                    <img id="thumb-2" src="" alt="Thumb 2">
+                    <img id="thumb-3" src="" alt="Thumb 3">
+                </div>
+            </div>
+            <div class="product-info-box">
+                <h1 id="p-name">Cargando producto...</h1>
+                <div class="price" id="p-price">$0</div>
+                <p id="p-desc">Sumérgete en una aventura épica con gráficos de última generación, historia inmersiva y un sistema de combate totalmente optimizado.</p>
+                <div class="qty-selector">
+                    <label for="p-qty">Unidades:</label>
+                    <input type="number" id="p-qty" value="1" min="1">
+                </div>
+                <button id="add-to-cart-btn" class="btn btn-primary btn-block">Agregar al Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

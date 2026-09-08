@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerZone - Tu Tienda de Juegos</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon">🎮</span>
+            <h1>GamerZone</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="productos.html">Catálogo</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Noticias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-right">
+            <a href="login.html" class="btn-link">Iniciar sesión</a> | 
+            <a href="registro.html" class="btn-link">Registrarse</a>
+            <a href="carrito.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h2>TIENDA GAMER </h2>
+                <p>Encuentra los lanzamientos más esperados, consolas de última generación y accesorios para llevar tu experiencia al siguiente nivel.</p>
+                <a href="productos.html" class="btn btn-primary">Ver Catálogo</a>
+            </div>
+            <div class="hero-image">
+                <img src="../blog1.jpg" alt="Banner Gamer">
+            </div>
+        </section>
+
+        <section class="featured-product">
+            <h3>Producto destacado</h3>
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../ac3nswchico.jpg" alt="Assassins Creed III">
+                </div>
+                <h3 class="product-title">Nintendo Switch Assassins Creed III Remastered</h3>
+                <div class="product-footer">
+                    <span class="attributes">Videojuego</span>
+                    <span class="price">$94.990</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-cols">
+            <div>
+                <h3>GamerZone</h3>
+                <p>La mejor tienda de videojuegos y accesorios de Chile.</p>
+            </div>
+            <div>
+                <h3>Plataformas</h3>
+                <p>PlayStation 5 | Xbox Series X | Nintendo Switch | PC Gaming</p>
+            </div>
+            <div>
+                <h3>Boletín Gamer</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Correo gamer...">
+                    <button type="button" class="btn btn-primary">Suscribir</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GamerZone todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>
