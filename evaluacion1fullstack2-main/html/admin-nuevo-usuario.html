@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Usuario Admin - GamerZone</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">⚡ ADMIN PANEL</div>
+        <nav class="sidebar-nav">
+            <a href="admin-home.html">📊 DASHBOARD</a>
+            <a href="admin-productos.html">🎮 INVENTARIO</a>
+            <a href="admin-usuarios.html" class="active">👥 USUARIOS</a>
+            <a href="index.html">🛍️ IR A TIENDA</a>
+            <a href="#" onclick="cerrarSesionGamer()" style="color:var(--primary-pink); margin-top:20px;">🚪 CERRAR SESIÓN</a>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <h1 style="font-family:'Orbitron', sans-serif; color:var(--primary-cyan);">NUEVO USUARIO (ADMINISTRACIÓN)</h1>
+        <p style="margin-top:10px; color:var(--text-muted); font-size:1rem;">Registra un nuevo usuario asignándole un perfil de acceso específico.</p>
+
+        <div class="form-card wide-card" style="margin-top: 25px;">
+            <form id="user-admin-form" novalidate>
+                <div class="form-group">
+                    <label for="admin-user-role">TIPO DE USUARIO (ROLES)</label>
+                    <select id="admin-user-role" class="form-control">
+                        <option value="">-- Seleccionar Perfil --</option>
+                        <option value="Administrador">Administrador (Acceso total)</option>
+                        <option value="Vendedor">Vendedor (Gestión de ventas)</option>
+                        <option value="Cliente">Cliente Gamer</option>
+                    </select>
+                    <span class="error-message" id="err-admin-user-role"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-run">RUN (Sin puntos ni guión. Ej: 19011022K)</label>
+                    <input type="text" id="user-run" class="form-control" placeholder="19011022K">
+                    <span class="error-message" id="err-user-run"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-name">NOMBRE</label>
+                        <input type="text" id="user-name" class="form-control" placeholder="Ej: Juan">
+                        <span class="error-message" id="err-user-name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-lastname">APELLIDOS</label>
+                        <input type="text" id="user-lastname" class="form-control" placeholder="Ej: Pérez González">
+                        <span class="error-message" id="err-user-lastname"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">CORREO ELECTRÓNICO</label>
+                    <input type="email" id="user-email" class="form-control" placeholder="correo@ejemplo.com">
+                    <span class="error-message" id="err-user-email"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-region">Región</label>
+                        <select id="user-region" class="form-control"><option value="">-- Seleccione --</option></select>
+                        <span class="error-message" id="err-user-region"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-comuna">Comuna</label>
+                        <select id="user-comuna" class="form-control"><option value="">-- Seleccione --</option></select>
+                        <span class="error-message" id="err-user-comuna"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-address">DIRECCIÓN</label>
+                    <input type="text" id="user-address" class="form-control" placeholder="Av. Siempre Viva 742">
+                    <span class="error-message" id="err-user-address"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">GUARDAR USUARIO</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

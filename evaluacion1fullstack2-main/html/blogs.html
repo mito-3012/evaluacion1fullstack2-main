@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - GamerZone</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon">🎮</span>
+            <h1>GamerZone</h1>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="productos.html">Catálogo</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html" class="active">Noticias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="header-right">
+            <a href="carrito.html" class="cart-btn">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">Home &gt; Noticias</div>
+
+        <h1 style="font-family:'Orbitron', sans-serif; color:var(--primary-cyan);">
+            Noticias Gamer
+        </h1>
+        <p style="color:var(--text-muted); margin:10px 0 30px;">
+            Mantente al día con las novedades, juegos y consejos del mundo gamer.
+        </p>
+
+        <div class="blog-grid">
+
+            <article class="blog-card">
+                <img src="../blog-1.jpg" alt="Novedades del mundo gamer" class="blog-img">
+                <div class="blog-card-content">
+                    <h2>Las novedades que están marcando el mundo gamer</h2>
+                    <p>
+                        Revisa algunas de las noticias y novedades más importantes
+                        para los fanáticos de los videojuegos.
+                    </p>
+                    <a href="detalle-blog-1.html" class="btn btn-primary">
+                        Leer noticia
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="../blog1.jpg" alt="Guía de periféricos competitivos" class="blog-img">
+                <div class="blog-card-content">
+                    <h2>Guía de periféricos competitivos</h2>
+                    <p>
+                        Conoce recomendaciones para mejorar tu setup y conseguir
+                        un mejor rendimiento en tus partidas.
+                    </p>
+                    <a href="detalle-blog-2.html" class="btn btn-primary">
+                        Leer noticia
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Juego - GamerZone Admin</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">⚡ ADMIN PANEL</div>
+        <nav class="sidebar-nav">
+            <a href="admin-home.html">📊 DASHBOARD</a>
+            <a href="admin-productos.html" class="active">🎮 INVENTARIO</a>
+            <a href="admin-usuarios.html">👥 USUARIOS</a>
+            <a href="index.html">🛍️ IR A TIENDA</a>
+            <a href="#" onclick="cerrarSesionGamer()" style="color:var(--primary-pink); margin-top:20px;">🚪 CERRAR SESIÓN</a>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <h1 style="font-family:'Orbitron', sans-serif; color:var(--primary-cyan);">REGISTRAR NUEVO JUEGO / PRODUCTO</h1>
+        <p style="margin-top:10px; color:var(--text-muted); font-size:1rem;">Ingresa los detalles del nuevo elemento para integrarlo al catálogo global.</p>
+
+        <div class="form-card wide-card" style="margin-top: 25px;">
+            <form id="product-form" novalidate>
+                <div class="form-group">
+                    <label for="prod-code">CÓDIGO PRODUCTO (Mín. 3 carac. Ej: PS5-001)</label>
+                    <input type="text" id="prod-code" class="form-control" placeholder="PS5-001">
+                    <span class="error-message" id="err-prod-code"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="prod-name">TÍTULO DEL JUEGO / PRODUCTO (Máx 100)</label>
+                    <input type="text" id="prod-name" class="form-control" placeholder="Ej: Grand Theft Auto VI">
+                    <span class="error-message" id="err-prod-name"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="prod-desc">SINOPSIS / DESCRIPCIÓN (Opcional - Máx 500)</label>
+                    <textarea id="prod-desc" class="form-control" rows="4" placeholder="Descripción detallada del producto..."></textarea>
+                    <span class="error-message" id="err-prod-desc"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prod-price">PRECIO ($ >= 0)</label>
+                        <input type="number" id="prod-price" class="form-control" step="1" placeholder="59990">
+                        <span class="error-message" id="err-prod-price"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prod-stock">STOCK (Entero >= 0)</label>
+                        <input type="number" id="prod-stock" class="form-control" placeholder="10">
+                        <span class="error-message" id="err-prod-stock"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prod-critical">STOCK CRÍTICO (Opcional)</label>
+                        <input type="number" id="prod-critical" class="form-control" placeholder="5">
+                        <span class="error-message" id="err-prod-critical"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prod-cat">CATEGORÍA / PLATAFORMA</label>
+                    <select id="prod-cat" class="form-control">
+                        <option value="">-- Seleccionar --</option>
+                        <option value="PlayStation 5">PlayStation 5</option>
+                        <option value="Xbox Series X">Xbox Series X</option>
+                        <option value="Nintendo Switch">Nintendo Switch</option>
+                        <option value="PC Gaming">PC Gaming</option>
+                        <option value="Accesorios">Accesorios & Periféricos</option>
+                    </select>
+                    <span class="error-message" id="err-prod-cat"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">GUARDAR JUEGO</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

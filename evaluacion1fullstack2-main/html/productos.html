@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Gamer - GamerZone</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon">🎮</span>
+            <h1>GamerZone</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="productos.html" class="active">Catálogo</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Noticias</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="header-right">
+            <div class="auth-links">
+                <a href="login.html">Iniciar sesión</a> | 
+                <a href="registro.html">Registrar usuario</a>
+            </div>
+            <a href="carrito.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- HERO BANNER -->
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h2>TIENDA ONLINE</h2>
+                <p>Explora nuestro catálogo con las mejores ofertas en consolas, videojuegos de última generación y accesorios exclusivos gamer.</p>
+                <a href="#all-products-container" class="btn btn-outline">↓ Ver productos</a>
+            </div>
+            
+            <div class="hero-image">
+                <img src="../mescla.jpg" alt="Escena gamer con control y audífonos luces neón" class="hero-img">
+            </div>
+        </section>
+
+        <!-- TÍTULO DE SECCIÓN -->
+        <h1 class="page-title">CATÁLOGO DE VIDEOJUEGOS Y CONSOLAS</h1>
+
+        <!-- GRILLA DE PRODUCTOS -->
+        <div class="product-grid" id="all-products-container">
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../play5.jpg" alt="Consola PlayStation 5 Sony Slim Digital">
+                </div>
+                <h3 class="product-title">PlayStation 5 Sony Slim Digital</h3>
+                <div class="product-footer">
+                    <span class="attributes">Consola</span>
+                    <span class="price">$499.999</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(1)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../switch2.jpg" alt="Consola Nintendo Switch 2 NS2 LCD">
+                </div>
+                <h3 class="product-title">Consola Nintendo Switch 2 NS2 LCD</h3>
+                <div class="product-footer">
+                    <span class="attributes">Consola</span>
+                    <span class="price">$669.990</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(2)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../grandtheft.jpg" alt="Videojuego Grand Theft Auto VI PS5">
+                </div>
+                <h3 class="product-title">PlayStation 5 Grand Theft Auto VI</h3>
+                <div class="product-footer">
+                    <span class="attributes">Videojuego</span>
+                    <span class="price">$94.990</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(3)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../1348.jpg" alt="Videojuego 1348 Ex Voto PS5">
+                </div>
+                <h3 class="product-title">PlayStation 5 1348 Ex Voto</h3>
+                <div class="product-footer">
+                    <span class="attributes">Videojuego</span>
+                    <span class="price">$69.990</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(4)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../grandtheft.jpg" alt="Videojuego Grand Theft Auto VI Switch">
+                </div>
+                <h3 class="product-title">Nintendo Switch Grand Theft Auto VI</h3>
+                <div class="product-footer">
+                    <span class="attributes">Videojuego</span>
+                    <span class="price">$24.990</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(5)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../ac3nswchico.jpg" alt="Videojuego Assassin's Creed III">
+                </div>
+                <h3 class="product-title">Nintendo Switch Assassin's Creed III Remastered</h3>
+                <div class="product-footer">
+                    <span class="attributes">Videojuego</span>
+                    <span class="price">$94.990</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(6)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../Super-Pack-3-2.jpg" alt="Pack de videojuegos 9 en 1">
+                </div>
+                <h3 class="product-title">9 JUEGOS EN 1 PACK MEGA NINTENDO SWITCH</h3>
+                <div class="product-footer">
+                    <span class="attributes">Videojuego</span>
+                    <span class="price">$80.000</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(7)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="../mario.jpg" alt="Videojuego Super Mario Bros U Deluxe">
+                </div>
+                <h3 class="product-title">Super Mario Bros U Deluxe Nintendo Switch</h3>
+                <div class="product-footer">
+                    <span class="attributes">Videojuego</span>
+                    <span class="price">$59.000</span>
+                </div>
+                <button type="button" onclick="agregarAlCarritoGamer(8)" class="btn btn-primary btn-block" style="margin-top: 10px;">
+                    🛒 Añadir al carrito
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER ESTRUCTURADO -->
+    <footer class="main-footer">
+        <div class="footer-cols">
+            <div class="footer-left">
+                <span class="footer-brand">GamerZone</span>
+                <div class="payment-methods">
+                    <span class="pay-card">VISA</span>
+                    <span class="pay-card">MC</span>
+                    <span class="pay-card">AMEX</span>
+                </div>
+            </div>
+
+            <div class="footer-links">   
+                <a href="#all-products-container">Consolas</a> | 
+                <a href="#all-products-container">Videojuegos</a> | 
+                <a href="#all-products-container">Accesorios</a>
+            </div>
+
+            <div class="footer-newsletter">
+                <p>Stay In Touch! Join our Newsletter.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>
