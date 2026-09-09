@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Gamer - GamerZone</title>
+    
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo"><span class="logo-icon">🎮</span><h1>GamerZone</h1></div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="productos.html">Catálogo</a>
+        </nav>
+    </header>
+
+    <main class="container flex-center">
+        <div class="form-card wide-card">
+            <div class="card-header">REGISTRO DE USUARIO GAMER</div>
+            <form id="user-form" novalidate>
+                <div class="form-group">
+                    <label for="user-run">RUN (Sin puntos ni guión. Ej: 19011022K)</label>
+                    <input type="text" id="user-run" class="form-control" placeholder="19011022K">
+                    <span class="error-message" id="err-user-run"></span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-name">NOMBRE</label>
+                        <input type="text" id="user-name" class="form-control">
+                        <span class="error-message" id="err-user-name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-lastname">APELLIDOS</label>
+                        <input type="text" id="user-lastname" class="form-control">
+                        <span class="error-message" id="err-user-lastname"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">CORREO (@duoc.cl, @profesor.duoc.cl, @gmail.com)</label>
+                    <input type="email" id="user-email" class="form-control">
+                    <span class="error-message" id="err-user-email"></span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-pass">CONTRASEÑA (4 a 10 carac.)</label>
+                        <input type="password" id="user-pass" class="form-control">
+                        <span class="error-message" id="err-user-pass"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-pass-confirm">CONFIRMAR CONTRASEÑA</label>
+                        <input type="password" id="user-pass-confirm" class="form-control">
+                        <span class="error-message" id="err-user-pass-confirm"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-region">Región</label>
+                        <select id="user-region" class="form-control"><option value="">-- Seleccione la región --</option></select>
+                        <span class="error-message" id="err-user-region"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-comuna">Comuna</label>
+                        <select id="user-comuna" class="form-control"><option value="">-- Seleccione la comuna --</option></select>
+                        <span class="error-message" id="err-user-comuna"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user-address">DIRECCIÓN DE DESPACHO</label>
+                    <input type="text" id="user-address" class="form-control">
+                    <span class="error-message" id="err-user-address"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">CREAR CUENTA GAMER</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

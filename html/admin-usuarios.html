@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios - GamerZone Admin</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">⚡ ADMIN PANEL</div>
+        <nav class="sidebar-nav">
+            <a href="admin-home.html">📊 DASHBOARD</a>
+            <a href="admin-productos.html">🎮 INVENTARIO</a>
+            <a href="admin-usuarios.html" class="active">👥 USUARIOS</a>
+            <a href="index.html">🛍️ IR A TIENDA</a>
+            <a href="#" onclick="cerrarSesionGamer()" style="color:var(--primary-pink); margin-top:20px;">🚪 CERRAR SESIÓN</a>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <div class="admin-top-bar" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; flex-wrap: wrap; gap: 15px;">
+            <div>
+                <h1 style="font-family:'Orbitron', sans-serif; color:var(--primary-cyan);">Mantenedor de Usuarios</h1>
+                <p style="margin-top:5px; color:var(--text-muted); font-size:1rem;">Gestión e inspección de cuentas de usuario y roles del sistema.</p>
+            </div>
+            <a href="admin-nuevo-usuario.html" class="btn btn-primary">+ NUEVO USUARIO</a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>RUN</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Perfil</th>
+                        <th>Región / Comuna</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-users-table">
+                    <tr>
+                        <td>19011022K</td>
+                        <td>Gonzalo Gamer</td>
+                        <td>gonzalo@duoc.cl</td>
+                        <td><span class="badge badge-admin">Administrador</span></td>
+                        <td>Región Metropolitana / Santiago</td>
+                    </tr>
+                    <tr>
+                        <td>201234567</td>
+                        <td>Camila Player</td>
+                        <td>camila@gmail.com</td>
+                        <td><span class="badge badge-client">Cliente</span></td>
+                        <td>Región de la Araucanía / Temuco</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Gamer - GamerZone</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><span class="logo-icon">🎮</span><h1>GamerZone</h1></div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="productos.html">Catálogo</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Noticias</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+        <div class="header-right"><a href="carrito.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a></div>
+    </header>
+
+    <main class="container flex-center">
+        <div class="form-card">
+            <div class="brand-box">
+                <span class="logo-icon">🎮</span>
+                <h2>GamerZone</h2>
+            </div>
+            <div class="card-header">CONTACTO GAMER</div>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">NOMBRE COMPLETO</label>
+                    <input type="text" id="contact-name" name="nombre" class="form-control" autocomplete="name">
+                    <span class="error-message" id="err-contact-name"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">CORREO</label>
+                    <input type="email" id="contact-email" name="correo" class="form-control" autocomplete="email">
+                    <span class="error-message" id="err-contact-email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-msg">MENSAJE / CONSULTA</label>
+                    <textarea id="contact-msg" name="comentario" class="form-control" rows="4"></textarea>
+                    <span class="error-message" id="err-contact-msg"></span>
+                </div>
+                <button type="submit" class="btn btn-outline btn-block">ENVIAR CONSULTA</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>

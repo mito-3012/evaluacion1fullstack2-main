@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenedor Productos - GamerZone Admin</title>
+    <!-- Vinculación del CSS unificado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin-body">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">⚡ ADMIN PANEL</div>
+        <nav class="sidebar-nav">
+            <a href="admin-home.html">📊 DASHBOARD</a>
+            <a href="admin-productos.html" class="active">🎮 INVENTARIO</a>
+            <a href="admin-usuarios.html">👥 USUARIOS</a>
+            <a href="index.html">🛍️ IR A TIENDA</a>
+            <a href="#" onclick="cerrarSesionGamer()" style="color:var(--primary-pink); margin-top:20px;">🚪 CERRAR SESIÓN</a>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <div class="admin-top-bar" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; flex-wrap: wrap; gap: 15px;">
+            <div>
+                <h1 style="font-family:'Orbitron', sans-serif; color:var(--primary-cyan);">Catálogo e Inventario de Juegos</h1>
+                <p style="margin-top:5px; color:var(--text-muted); font-size:1rem;">Gestión de stock, precios y catálogo de productos.</p>
+            </div>
+            <a href="admin-nuevo-producto.html" class="btn btn-primary">+ AGREGAR JUEGO</a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Título</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Plataforma / Cat.</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-products-table">
+                    <!-- Contenido dinámico mediante JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Carga de Scripts JS unificados -->
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+</body>
+</html>
